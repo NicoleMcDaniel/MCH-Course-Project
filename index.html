@@ -1189,6 +1189,20 @@
       .tab-gateway-btn { padding: 1.75rem 1.25rem; }
       .objective-list {
         grid-template-columns: 1fr !important;
+        gap: 1rem;
+      }
+      .objective-list li {
+        padding: 1.25rem 1.25rem;     /* uniform padding - no extra left gutter */
+        text-align: center;
+        font-size: 0.95rem;
+        line-height: 1.5;
+      }
+      .objective-list li::before {
+        position: static;             /* drop out of absolute positioning */
+        display: flex;
+        margin: 0 auto 0.85rem;       /* center the badge, gap below it */
+        width: 2.5rem; height: 2.5rem;
+        font-size: 1.2rem;
       }
     }
 
